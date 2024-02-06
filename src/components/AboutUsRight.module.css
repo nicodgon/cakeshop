@@ -1,0 +1,75 @@
+.aboutUsRight{
+  grid-area: aboutUsRight;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.aboutUsRight h2{
+  margin: 0;
+  font-size: 3em;
+}
+
+.aboutUsRight p{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  background-image: url("../assets/images/pastel-contacto2.png");
+  background-position-y: -3em;
+  background-size: cover;
+  padding: 1em;
+  border-radius: 10px;
+  min-height: 9em;
+  transition: transform .4s
+}
+
+.infoContact{
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  background-image: url("../assets/images/pastel-contacto1.png");
+  background-size: cover;
+  padding: 1em;
+  border-radius: 10px;
+  min-height: 9em;
+  transition: transform .4s
+}
+
+.flexIcons{
+  display: flex;
+  gap: 1.5em;
+}
+
+.flexIcons a{
+  width: 40px;
+  height: 40px;
+}
+
+.flexIcons img{
+  width: 40px;
+  height: 40px;
+}
+
+@media only screen and (min-width:1280px){
+  .aboutUsDown{
+    background-position-y: -1em;
+  }
+  .info:hover{
+    transform: scale(1.1);
+  }
+  
+  .infoContact:hover{
+    transform: scale(1.1);
+  }
+}
+
+@media (hover:hover){
+  .flexIcons img:hover{
+    transform: scale(1.1);
+  }
+}

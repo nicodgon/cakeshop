@@ -1,0 +1,65 @@
+.title {
+  font-size: 3em;
+  padding-bottom: .7em;
+}
+
+.text {
+  font-size: 1.2em;
+  margin-bottom: 1.4em;
+}
+
+.btn {
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6em;
+  height: 2em;
+  font-size: 1.2em;
+  border-radius: 20px;
+  border: 2px solid #000;
+  background-color: rgb(217, 255, 0);
+  cursor: pointer;
+  transition: all .4s;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.btn span {
+  width: 6em;
+  height: 2em;
+  border-radius: 20px;
+  background-color: rgb(175, 228, 0);
+  position: absolute;
+  left: 6em;
+  animation: move 1s linear infinite;
+  z-index: -10;
+}
+
+@keyframes move {
+  0%{
+    left: 6em;
+  }
+  100%{
+    left: -6em;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .title {
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .text {
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .btn{
+    border: 1px solid #000;
+    margin: 0 auto;
+  }
+}

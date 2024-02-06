@@ -1,0 +1,43 @@
+.appContainer{
+  display: flex;
+  flex-direction: column;
+  border: 4em solid rgb(187, 29, 29);
+  box-sizing: border-box;
+  padding: 0 15em;
+  min-height: 100vh;
+}
+
+/* Swal */
+.price{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 2em;
+  color: #fff;
+}
+
+.description{
+  padding-top: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.description p{
+  width: 28em;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1.1em;
+  color: #fff;
+}
+
+@media only screen and (max-width:1280px){
+	.appContainer{
+    padding: 0 1em;
+    border: 2em solid rgb(187, 29, 29);
+	}
+}
+
+@media only screen and (max-width:768px){
+	.appContainer{
+    padding: 0;
+    border: 1em solid rgb(187, 29, 29);
+	}
+}

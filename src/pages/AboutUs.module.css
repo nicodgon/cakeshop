@@ -1,0 +1,65 @@
+.aboutUs{
+  display: grid;
+  column-gap:2em;
+  grid-template-columns: 4fr 7fr;
+  grid-template-areas: 
+  "title title"
+  "aboutUsLeft aboutUsRight"
+  "aboutUsDown aboutUsDown";
+  align-items: center;
+}
+
+.title{
+  margin-top: 1em;
+  grid-area: title;
+  font-size: 3em;
+  text-align: center;
+}
+
+.aboutUsLeft{
+  grid-area: aboutUsLeft;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutUsLeft img{
+  width: 100%;
+  transition: transform .4s;
+}
+
+.aboutUsDown{
+  grid-area: aboutUsDown;
+  background-image: url("../assets/images/pastel-contacto3.jpg");
+  background-position-y: -8em;
+  background-size: cover;
+  width: 100%;
+  height: 8.5em;
+  border-radius: 20px;
+  margin-top: 1em;
+  transition: transform .4s;
+}
+
+@media only screen and (max-width:1280px){
+	.aboutUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+	}
+  .aboutUsLeft img{
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .aboutUsDown{
+    background-position-y: -1em;
+  }
+}
+
+@media only screen and (min-width:1280px){
+  .aboutUsDown:hover{
+    transform: scale(1.1);
+  }
+}

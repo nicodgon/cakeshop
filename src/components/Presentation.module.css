@@ -1,0 +1,47 @@
+.presentation {
+  display: grid;
+  height: 35em;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  margin-top: 4em;
+}
+
+.rightContainer {
+  display: flex;
+  justify-content: end;
+}
+
+.rightContainer img {
+  border-radius: 40%;
+  width: 74%;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-3%);
+  }
+}
+
+@media only screen and (max-width:768px){
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    height: 23em;
+  }
+  .rightContainer {
+    padding-top: 11em;
+    justify-content: center;
+    position: absolute;
+    z-index: -10;
+  }
+  .rightContainer img {
+    width: 15em;
+  }
+}
+
+@media (hover:hover){
+  .rightContainer img:hover {
+    animation: bounce 1s infinite;
+  }
+}

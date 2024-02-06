@@ -1,0 +1,18 @@
+@import './normalize.css';
+
+*{
+  font-family: 'Rokkitt', serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #5d0000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff9393;
+  border-radius: 20px;
+}

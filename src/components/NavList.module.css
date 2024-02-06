@@ -1,0 +1,10 @@
+.linkContainer{
+  list-style-type: none;
+  font-weight: bold;
+}
+
+@media (hover:hover){
+  .link:hover {
+    color: #f00;
+  }
+}

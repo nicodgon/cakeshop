@@ -1,0 +1,15 @@
+.productContainer{
+  margin-bottom: 5em;
+}
+
+.title{
+  font-size: 2em;
+  text-align: center;
+  margin: 2em 0;
+}
+
+@media only screen and (max-width:768px){
+  .productContainer{
+    margin-bottom: 0;
+  }
+}
