@@ -1,9 +1,9 @@
-import styles from './AboutUsRight.module.css'
-import ContactIcon from './ContactIcon'
-import ContactInfo from './ContactInfo'
-import PropTypes from "prop-types"
+import styles from "./AboutUsRight.module.css";
+import ContactIcon from "./ContactIcon";
+import ContactInfo from "./ContactInfo";
+import PropTypes from "prop-types";
 
-export default function AboutUsRight({icons}) {
+export default function AboutUsRight({ icons }) {
   return (
     <div className={styles.aboutUsRight}>
       <div className={styles.info}>
@@ -19,6 +19,6 @@ export default function AboutUsRight({icons}) {
   );
 }
 
-AboutUsRight.propTypes={
+AboutUsRight.propTypes = {
   icons: PropTypes.array,
-}
+};

@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 import { useCartContext } from "../hooks/useCartContext.js";
 
 export default function NavBar() {
-  const {counter}=useCartContext()
-  const {list, expand} = useExpand()
+  const { counter } = useCartContext();
+  const { list, expand } = useExpand();
   return (
     <header>
       <nav className={styles.navContainer}>
@@ -20,13 +20,9 @@ export default function NavBar() {
         <button onClick={expand} className={styles.btnMenu}>
           <img src={menuIcon} alt="menú" className={styles.menuIcon} />
         </button>
-        <NavList active={active} list={list}/>
+        <NavList active={active} list={list} />
         <Link className={styles.iconContainer} to="/cart">
-          <img
-            className={styles.cartIcon}
-            src={cart}
-            alt="carrito"
-          />
+          <img className={styles.cartIcon} src={cart} alt="carrito" />
           <div className={styles.counterContainer}>
             <span>{counter}</span>
           </div>

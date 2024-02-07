@@ -1,19 +1,19 @@
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 
-export default function ContactIcon({icons}){
-  return(
+export default function ContactIcon({ icons }) {
+  return (
     <>
-      {icons.map(({title,img,link})=>{
-        return(
+      {icons.map(({ title, img, link }) => {
+        return (
           <a key={title} href={link}>
             <img src={img} alt={title} />
           </a>
-        )
+        );
       })}
     </>
-  )
+  );
 }
 
-ContactIcon.propTypes={
+ContactIcon.propTypes = {
   icons: PropTypes.array,
-}
+};

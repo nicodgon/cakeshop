@@ -1,5 +1,5 @@
-import styles from './LeftContainer.module.css'
-import { Link } from 'react-router-dom'
+import styles from "./LeftContainer.module.css";
+import { Link } from "react-router-dom";
 
 export default function LeftContainer() {
   return (
