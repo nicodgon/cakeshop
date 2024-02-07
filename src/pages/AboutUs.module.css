@@ -1,6 +1,6 @@
 .aboutUs{
   display: grid;
-  column-gap:2em;
+  column-gap: 2em;
   grid-template-columns: 4fr 7fr;
   grid-template-areas: 
   "title title"
@@ -29,7 +29,7 @@
 
 .aboutUsDown{
   grid-area: aboutUsDown;
-  background-image: url("../assets/images/pastel-contacto3.jpg");
+  background-image: url("../assets/images/pastel-contacto3.png");
   background-position-y: -8em;
   background-size: cover;
   width: 100%;
@@ -58,7 +58,7 @@
   }
 }
 
-@media only screen and (min-width:1280px){
+@media (hover:hover){
   .aboutUsDown:hover{
     transform: scale(1.1);
   }

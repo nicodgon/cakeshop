@@ -59,16 +59,15 @@
   .aboutUsDown{
     background-position-y: -1em;
   }
-  .info:hover{
-    transform: scale(1.1);
-  }
-  
-  .infoContact:hover{
-    transform: scale(1.1);
-  }
 }
 
 @media (hover:hover){
+  .info:hover{
+    transform: scale(1.1);
+  }
+  .infoContact:hover{
+    transform: scale(1.1);
+  }
   .flexIcons img:hover{
     transform: scale(1.1);
   }

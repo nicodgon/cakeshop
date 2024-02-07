@@ -28,11 +28,11 @@ export function CartProvider({children}){
     if(cart.length == 0){
       setCounter(1)
     }else{
-      setCounter(cart.reduce((acc, product) => acc + product.cant, 1))
+      setCounter(cart.reduce((acc, product) => acc + product.quantity, 1))
     }
   }
   //Calcular el precio total de la compra
-  const total = cart.reduce((acc, product) => acc + product.price * product.cant, 0);
+  const total = cart.reduce((acc, product) => acc + product.price * product.quantity, 0);
 
   //Agregar producto o su cantidad al carrito
   const manageCart = (id)=>{
@@ -47,13 +47,13 @@ export function CartProvider({children}){
     }else{
       // Si existe un producto con el id recibido le sumo 1 a la cantidad
       const index = cart.findIndex(prod=>prod.id === id)
-      cart[index].cant+=1
+      cart[index].quantity+=1
     }
   }
   //Eliminar un producto del carrito y descontar su cantidad del contador
   const deleteProduct=(id)=>{
     const index = cart.findIndex(prod=>prod.id == id)
-    setCounter(counter - cart[index].cant)
+    setCounter(counter - cart[index].quantity)
     const newCart = [...cart.slice(0, index), ...cart.slice(index + 1)];
     setCart(newCart)
   }

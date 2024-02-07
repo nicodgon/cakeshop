@@ -10,7 +10,7 @@ export default function Cart(){
   const finalizePurchase=()=>{
     Swal.fire({
     title: "Compra finalizada con exito",
-    text: `Muchas gracias por confiar en nosotros!`,
+    text: `¡Muchas gracias por confiar en nosotros!`,
     color:"#4f9000",
     icon: "success",
     allowOutsideClick: false,
@@ -26,14 +26,14 @@ export default function Cart(){
       <h1 className={styles.title}>Carrito</h1>
       <section>
         {cart.length != 0 ? <ol className={styles.list}>
-          {cart.map(({id,title,image,price,cant})=>{
+          {cart.map(({id,title,image,price,quantity})=>{
             return(
                 <li key={id} className={styles.prodContainer}>
                   <img className={styles.prodimage} src={image} alt={title} />
                   <div className={styles.info}>
                     <h3>{title}</h3>
                     <span>${price}</span>
-                    <span>cantidad: {cant}</span>
+                    <span>cantidad: {quantity}</span>
                   </div>
                   <img className={styles.trashIcon} src={trash} onClick={()=>deleteProduct(id)} alt="basura" />
                 </li>
