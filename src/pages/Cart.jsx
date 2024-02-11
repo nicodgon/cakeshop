@@ -1,7 +1,7 @@
 import styles from "./Cart.module.css";
 import PropTypes from "prop-types";
 import { useCartContext } from "../hooks/useCartContext.js";
-import trash from "../assets/icons/trash.svg";
+import trash from "../assets/icons/basura.svg";
 import Swal from "sweetalert2";
 
 export default function Cart() {

@@ -9,13 +9,13 @@ export const icons = [
     link: "https://wa.me/59262027",
   },
   {
-    title: "email",
-    img: email,
-    link: "https://login.live.com",
-  },
-  {
     title: "instagram",
     img: instagram,
     link: "https://www.instagram.com/nicolasgonzalez__1/",
+  },
+  {
+    title: "email",
+    img: email,
+    link: "https://login.live.com",
   },
 ];

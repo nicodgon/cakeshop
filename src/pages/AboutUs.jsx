@@ -1,4 +1,4 @@
-import cooking from "../assets/icons/cooking.svg";
+import cooking from "../assets/icons/cocinando.svg";
 import AboutUsRight from "../components/AboutUsRight";
 import { icons } from "../data/icons";
 import styles from "./AboutUs.module.css";

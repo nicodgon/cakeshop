@@ -43,14 +43,10 @@
 .flexIcons{
   display: flex;
   gap: 1.5em;
+  position: relative;
 }
 
 .flexIcons a{
-  width: 40px;
-  height: 40px;
-}
-
-.flexIcons img{
   width: 40px;
   height: 40px;
 }
@@ -63,12 +59,6 @@
 
 @media (hover:hover){
   .info:hover{
-    transform: scale(1.1);
-  }
-  .infoContact:hover{
-    transform: scale(1.1);
-  }
-  .flexIcons img:hover{
     transform: scale(1.1);
   }
 }

@@ -1,0 +1,33 @@
+.icon{
+  width: 40px;
+}
+
+.btn{
+  position: absolute;
+  left: 10.5em;
+  bottom: 1.5em;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.342);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn img{
+  width: 20px;
+  height: 20px;
+}
+
+@media (hover:hover){
+  .btn:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.403);
+  }
+  .icon:hover{
+    transform: scale(1.1);
+  }
+}
