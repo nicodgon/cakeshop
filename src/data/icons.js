@@ -11,7 +11,7 @@ export const icons = [
   {
     title: "instagram",
     img: instagram,
-    link: "https://www.instagram.com/nicolasgonzalez__1/",
+    link: "https://www.instagram.com/nicolasdg_dev/",
   },
   {
     title: "email",
