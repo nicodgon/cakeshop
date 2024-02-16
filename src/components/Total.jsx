@@ -3,13 +3,13 @@ import styles from "./Total.module.css";
 import PropTypes from "prop-types";
 
 export default function Total({ total, clearCart }) {
-  const {handleClick} = useFinalizePurchase();
+  const {finalizePurchase} = useFinalizePurchase();
   return (
     <div className={styles.totalContainer}>
       <span>Total: ${total}</span>
       <button
         onClick={() => {
-          handleClick()
+          finalizePurchase()
           clearCart();
         }}
       >
